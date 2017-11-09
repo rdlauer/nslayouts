@@ -1,7 +1,3 @@
-// Parse.initialize("FwVMmzHookZZ5j9F9ILc2E5MT5ufabuV7hCXKSeu");
-// Parse.serverURL = 'http://129.25.12.218:1337/parse';
-// var Submission = Parse.Object.extend("FlexboxFroggy");
-
 var logos = {
 	'n': 'nativescript',
 	'a': 'angular',
@@ -80,6 +76,9 @@ var game = {
 
 
 	  $('.arrow, #next').addClass('disabled');
+
+	  // add a ga event to specify that this level has been completed
+	  dataLayer.push({'event': 'level_' + game.level + '_complete'});
 
       setTimeout(function() {
         if (game.level >= levels.length - 1) {

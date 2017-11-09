@@ -38,6 +38,7 @@ body {
 #sidebar {
   /* width: 50%;
   min-width: 300px; */
+  width: 800px;
   position: relative;
   padding: 2em;
   background-color: #3e61f5;
@@ -396,7 +397,7 @@ button:not(.disabled):hover {
 
 #board {
   position: relative;
-  width: 50vw;
+  width: 30vw;
   /* height: 50vw; */
   height: 760px;
   min-width: 300px;
