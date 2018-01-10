@@ -1,63 +1,74 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87806955-3"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'UA-87806955-3');
 	</script>
-    <meta charset="utf-8">
-    <title>Learn NativeScript Layouts - A tool for learning cross-platform iOS and Android layouts with NativeScript</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:url"           content="https://www.nslayouts.com">
-    <meta property="og:type"          content="website">
-    <meta property="og:title"         content="Learn NativeScript Layouts">
-    <meta property="og:description"   content="A tool for learning cross-platform iOS and Android layouts with NativeScript">
-    <meta property="og:image"         content="https://www.nslayouts.com/images/screenshot.png">
-    <meta name="twitter:url"          content="https://www.nslayouts.com">
-    <meta name="twitter:title"        content="Learn NativeScript Layouts">
-    <meta name="twitter:description"  content="A tool for learning cross-platform iOS and Android layouts with NativeScript">
-    <meta name="twitter:image"        content="https://www.nslayouts.com/images/screenshot.png">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+	<meta charset="utf-8">
+	<title>Learn NativeScript Layouts - A tool for learning cross-platform iOS and Android layouts with NativeScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:url" content="https://www.nslayouts.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Learn NativeScript Layouts">
+	<meta property="og:description" content="A tool for learning cross-platform iOS and Android layouts with NativeScript">
+	<meta property="og:image" content="https://www.nslayouts.com/images/screenshot.png">
+	<meta name="twitter:url" content="https://www.nslayouts.com">
+	<meta name="twitter:title" content="Learn NativeScript Layouts">
+	<meta name="twitter:description" content="A tool for learning cross-platform iOS and Android layouts with NativeScript">
+	<meta name="twitter:image" content="https://www.nslayouts.com/images/screenshot.png">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/device-mockups.min.css">
-  </head>
-  <body>
-    <section id="sidebar">
-      <div>
-        <div id="level-counter">
-          <span class="arrow left">◀</span>
-          <span id="level-indicator">
-            <span id="labelLevel" class="translate">Level</span>
-            <span class="current">1</span>
-            <span id="labelOf" class="translate">of</span>
-            <span class="total">1</span>
-            <span class="caret">▾</span>
-          </span>
-          <span class="arrow right">▶</span>
-          <div id="levelsWrapper" class="tooltip">
-            <div id="levels"></div>
-            <div id="labelReset" class="translate">Reset</div>
-          </div>
-        </div>
-        <h1>Learn {N} Layouts</h1>
-        <p id="instructions"></p>
-        <p id="docs"></p>
-      </div>
-      <div id="editor">
-        <div id="css">
-          <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
-          <pre id="before"></pre>
-          <textarea id="code" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
-          <pre id="after"></pre>
+</head>
+
+<body>
+	<section id="sidebar">
+		<div>
+			<div id="level-counter">
+				<span class="arrow left">◀</span>
+				<span id="level-indicator">
+					<span id="labelLevel" class="translate">Level</span>
+					<span class="current">1</span>
+					<span id="labelOf" class="translate">of</span>
+					<span class="total">1</span>
+					<span class="caret">▾</span>
+				</span>
+				<span class="arrow right">▶</span>
+				<div id="levelsWrapper" class="tooltip">
+					<div id="levels"></div>
+					<div id="labelReset" class="translate">Reset</div>
+				</div>
+			</div>
+			<h1>Learn {N} Layouts</h1>
+			<p id="instructions"></p>
+			<p id="docs"></p>
 		</div>
-		<button id="help" class="translate">Help!</button>
-        <button id="next" class="translate">Next</button>
-      </div>
-      <div id="share">
+		<div id="editor">
+			<div id="css">
+				<div class="line-numbers">1
+					<br>2
+					<br>3
+					<br>4
+					<br>5
+					<br>6
+					<br>7
+					<br>8
+					<br>9
+					<br>10</div>
+				<pre id="before"></pre>
+				<textarea id="code" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+				<pre id="after"></pre>
+			</div>
+			<button id="help" class="translate">Help!</button>
+			<button id="next" class="translate">Next</button>
+		</div>
+		<!-- <div id="share">
         <p class="img-next">
           <a href="http://cssgridgarden.com"><img src="images/next-gridgarden.png"></a>
           <a href="http://treehouse.7eer.net/c/371033/228915/3944?subId1=flexboxfroggy"><img src="images/next-treehouse.png"></a>
@@ -68,15 +79,15 @@
             <a href="https://twitter.com/playcodepip" class="twitter-follow-button" data-show-count="false">Follow @playcodepip</a>
           </span>
         </p>
-      </div>
+      </div> -->
 
-      <div class="credits">
-        <span id="labelFooter" class="translate">Find NativeScript on</span>
-        <a href="https://github.com/NativeScript">GitHub</a> •
-		<a href="https://twitter.com/NativeScript">Twitter</a> •
-		<a href="http://tinyurl.com/nativescriptSlack">Slack</a> •
-		<a href="https://discourse.nativescript.org/">Forum</a>
-        <!-- <span id="language">
+		<div class="credits">
+			<span id="labelFooter" class="translate">Find NativeScript on</span>
+			<a href="https://github.com/NativeScript">GitHub</a> •
+			<a href="https://twitter.com/NativeScript">Twitter</a> •
+			<a href="http://tinyurl.com/nativescriptSlack">Slack</a> •
+			<a href="https://discourse.nativescript.org/">Forum</a>
+			<!-- <span id="language">
           <span id="languageActive" class="toggle translate">English</span>
           <span class="tooltip">
             <a href="#en">English</a>
@@ -109,39 +120,41 @@
             <a href="#eo">Esperanto</a>
           </span>
         </span> -->
-      </div>
-      <div class="credits">
-        <span id="gridGarden" class="translate">Want to learn Flexbox for NativeScript? Play</span> <a href="http://flexboxfroggy.com">Flexbox Froggy</a>.
-      </div>
-    </section>
-    <section id="view">
-      <div id="board">
-        <div id="pond">
-			<div class="device-wrapper">
-				<div class="device" data-device="iPhone7" data-orientation="portrait" data-color="black">
-					<div class="screen-actionbar">
-					</div>
-					<div class="screen">
-					<!-- PUT CONTENTS HERE -->
-					</div>
-					<div class="button">
-					<!-- You can hook the "home button" to some JavaScript events or just remove it -->
+		</div>
+		<div class="credits">
+			<span id="gridGarden" class="translate">Want to learn Flexbox for NativeScript? Play</span>
+			<a href="http://flexboxfroggy.com">Flexbox Froggy</a>.
+		</div>
+	</section>
+	<section id="view">
+		<div id="board">
+			<div id="pond">
+				<div class="device-wrapper">
+					<div class="device" data-device="iPhone7" data-orientation="portrait" data-color="black">
+						<div class="screen-actionbar">
+						</div>
+						<div class="screen">
+							<!-- PUT CONTENTS HERE -->
+						</div>
+						<div class="button">
+							<!-- You can hook the "home button" to some JavaScript events or just remove it -->
+						</div>
 					</div>
 				</div>
 			</div>
-        </div>
-        <div id="background">
-        </div>
-	  </div>
-	  <div id="holding"></div>
-	  <div id="holding-hidden"></div>
+			<div id="background">
+			</div>
+		</div>
+		<div id="holding"></div>
+		<div id="holding-hidden"></div>
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <!-- <script src="https://unpkg.com/parse@1.9.2/dist/parse.min.js"></script> -->
-    <script src="js/levels.js"></script>
-    <script src="js/docs.js"></script>
-    <script src="js/messages.js"></script>
+	<!-- <script src="https://unpkg.com/parse@1.9.2/dist/parse.min.js"></script> -->
+	<script src="js/levels.js"></script>
+	<script src="js/docs.js"></script>
+	<script src="js/messages.js"></script>
 	<script src="js/game.js"></script>
-  </body>
+</body>
+
 </html>
