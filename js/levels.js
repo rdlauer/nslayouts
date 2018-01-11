@@ -22,7 +22,7 @@ var levels = [
     preselect: [26, 34],
     before: '',
     after:
-      '  <Image src="res://nativescript" stretch="none" />\n  <Image src="res://angular" stretch="none" />\n  <Image src="res://vue" stretch="none" />\n</StackLayout>'
+      '  <Image src="res://nativescript" stretch="none"></Image>\n  <Image src="res://angular" stretch="none"></Image>\n  <Image src="res://vue" stretch="none"></Image>\n</StackLayout>'
   },
   {
     name: '(2) stack layout horizontal alignment',
@@ -39,7 +39,7 @@ var levels = [
     preselect: [59, 59],
     before: '',
     after:
-      '  <Image src="res://webpack" stretch="none" />\n  <Image src="res://preact" stretch="none" />\n</StackLayout>'
+      '  <Image src="res://webpack" stretch="none"></Image>\n  <Image src="res://preact" stretch="none"></Image>\n</StackLayout>'
   },
   {
     name: '(3) stack layout horizontal and vertical alignment',
@@ -57,7 +57,7 @@ var levels = [
     preselect: [67, 67],
     before: '',
     after:
-      '  <Image src="res://vue" stretch="none" />\n  <Image src="res://redux" stretch="none" />\n</StackLayout>'
+      '  <Image src="res://vue" stretch="none"></Image>\n  <Image src="res://redux" stretch="none"></Image>\n</StackLayout>'
   },
   {
     name: '(4) stack layout stagger elements',
@@ -72,10 +72,11 @@ var levels = [
       { top: 270, left: 260 }
     ],
     answer:
-      '<Image src="res://angular" stretch="none" horizontalAlignment="left" />\n<Image src="res://vue" stretch="none" horizontalAlignment="center" />\n<Image src="res://preact" stretch="none" horizontalAlignment="right" />',
+      '<Image src="res://angular" stretch="none" horizontalAlignment="left"></Image>\n<Image src="res://vue" stretch="none" horizontalAlignment="center"></Image>\n<Image src="res://preact" stretch="none" horizontalAlignment="right"></Image>',
     lines: 3,
     hint:
-      '<Image src="res://angular" stretch="none" />\n<Image src="res://vue" stretch="none" />\n<Image src="res://preact" stretch="none" />',
+      '<Image src="res://angular" stretch="none"></Image>\n<Image src="res://vue" stretch="none"></Image>\n<Image src="res://preact" stretch="none"></Image>',
+    preselect: [41, 41],
     before: '<StackLayout orientation="vertical">',
     after: '</StackLayout>'
   },
@@ -101,7 +102,7 @@ var levels = [
     preselect: [25, 25],
     before: '',
     after:
-      '  <Image src="res://nativescript" stretch="none" />\n  <Image src="res://angular" stretch="none" />\n  <Image src="res://vue" stretch="none" />\n  <Image src="res://preact" stretch="none" />\n  <Image src="res://webpack" stretch="none" />\n  <Image src="res://redux" stretch="none" />\n  <Image src="res://nativescripting" stretch="none" />\n</WrapLayout>'
+      '  <Image src="res://nativescript" stretch="none"></Image>\n  <Image src="res://angular" stretch="none"></Image>\n  <Image src="res://vue" stretch="none"></Image>\n  <Image src="res://preact" stretch="none"></Image>\n  <Image src="res://webpack" stretch="none"></Image>\n  <Image src="res://redux" stretch="none"></Image>\n  <Image src="res://nativescripting" stretch="none"></Image>\n</WrapLayout>'
   },
   {
     name: '(6) wrap layout vertical',
@@ -125,7 +126,7 @@ var levels = [
     preselect: [25, 25],
     before: '',
     after:
-      '  <Image src="res://nativescript" stretch="none" />\n  <Image src="res://angular" stretch="none" />\n  <Image src="res://vue" stretch="none" />\n  <Image src="res://preact" stretch="none" />\n  <Image src="res://webpack" stretch="none" />\n  <Image src="res://redux" stretch="none" />\n  <Image src="res://nativescripting" stretch="none" />\n</WrapLayout>'
+      '  <Image src="res://nativescript" stretch="none"></Image>\n  <Image src="res://angular" stretch="none"></Image>\n  <Image src="res://vue" stretch="none"></Image>\n  <Image src="res://preact" stretch="none"></Image>\n  <Image src="res://webpack" stretch="none"></Image>\n  <Image src="res://redux" stretch="none"></Image>\n  <Image src="res://nativescripting" stretch="none"></Image>\n</WrapLayout>'
   },
   {
     name: '(7) absolute layout standard',
@@ -141,11 +142,11 @@ var levels = [
       { top: 190, left: 135 }
     ],
     answer:
-      '<Image src="res://nativescript" stretch="none" top="10" left="10" />\n<Image src="res://angular" stretch="none" top="10" left="170" />\n<Image src="res://vue" stretch="none" top="170" left="10" />\n<Image src="res://preact" stretch="none" top="170" left="170" />',
+      '<Image src="res://nativescript" stretch="none" top="10" left="10"></Image>\n<Image src="res://angular" stretch="none" top="10" left="170"></Image>\n<Image src="res://vue" stretch="none" top="170" left="10"></Image>\n<Image src="res://preact" stretch="none" top="170" left="170"></Image>',
     lines: 4,
     hint:
-      '<Image src="res://nativescript" stretch="none" />\n<Image src="res://angular" stretch="none" />\n<Image src="res://vue" stretch="none" />\n<Image src="res://preact" stretch="none" />',
-    preselect: [25, 25],
+      '<Image src="res://nativescript" stretch="none"></Image>\n<Image src="res://angular" stretch="none"></Image>\n<Image src="res://vue" stretch="none"></Image>\n<Image src="res://preact" stretch="none"></Image>',
+    preselect: [46, 46],
     before: '<AbsoluteLayout>',
     after: '</AbsoluteLayout>'
   },
@@ -158,19 +159,20 @@ var levels = [
     board: 'wr',
     result: [{ top: 100, left: 50 }, { top: 130, left: 80 }],
     answer:
-      '<Image src="res://redux" stretch="none" top="10" left="10" margin="30" />',
+      '<Image src="res://redux" stretch="none" top="10" left="10" margin="30"></Image>',
     lines: 1,
-    hint: '<Image src="res://redux" stretch="none" top="10" left="10"  />',
-    preselect: [63, 63],
+    hint:
+      '<Image src="res://redux" stretch="none" top="10" left="10" ></Image>',
+    preselect: [59, 59],
     before:
-      '<AbsoluteLayout>\n  <Image src="res://webpack" stretch="none" top="10" left="10" />\n',
+      '<AbsoluteLayout>\n  <Image src="res://webpack" stretch="none" top="10" left="10"></Image>\n',
     after: '</AbsoluteLayout>'
   },
   {
     name: '(9) dock layout stretchlastchild = false',
     instructions: {
       en:
-        "<p>You're really getting the hang of this aren't you? 😎 But I think it's time we moved on to the <code>&lt;DockLayout&gt;</code>.</p><p>You generally use the <code>&lt;DockLayout&gt;</code> when you want to position elements up against the sides of its parent container (often the page/view itself).</p><p>Let's start simple by focusing on <i>docking</i> our icons on the left/top/right/bottom of our screen. Pay attention to the <code>stretchLastChild</code> property, as that will play into what we do in the next lesson.</p><p>⚠️ Don't be surprised if the final element positions look odd, as you have to remember the docking containers end up looking like this: <img src='https://docs.nativescript.org/img/modules/layouts/dock-layout1.png' width='15%' align='top' /></p>"
+        "<p>You're really getting the hang of this aren't you? 😎 But I think it's time we moved on to the <code>&lt;DockLayout&gt;</code>.</p><p>You generally use the <code>&lt;DockLayout&gt;</code> when you want to position elements up against the sides of its parent container (often the page/view itself).</p><p>Let's start simple by focusing on <i>docking</i> our icons on the left/top/right/bottom of our screen. Pay attention to the <code>stretchLastChild</code> property, as that will play into what we do in the next lesson.</p><p>⚠️ Don't be surprised if the final element positions look odd, as you have to remember the docking containers end up looking like this: <img src='https://docs.nativescript.org/img/modules/layouts/dock-layout1.png' width='15%' align='top'></Image></p>"
     },
     board: 'navw',
     result: [
@@ -180,20 +182,20 @@ var levels = [
       { top: 490, left: 150 }
     ],
     answer:
-      '<Image src="res://vue" stretch="none" dock="right" />\n<Image src="res://webpack" stretch="none" dock="bottom" />',
+      '<Image src="res://vue" stretch="none" dock="right"></Image>\n<Image src="res://webpack" stretch="none" dock="bottom"></Image>',
     lines: 2,
     hint:
-      '<Image src="res://vue" stretch="none" dock="" />\n<Image src="res://webpack" stretch="none" dock="" />\n',
+      '<Image src="res://vue" stretch="none" dock=""></Image>\n<Image src="res://webpack" stretch="none" dock=""></Image>\n',
     preselect: [44, 44],
     before:
-      '<DockLayout stretchLastChild="false">\n  <Image src="res://nativescript" stretch="none" dock="left" />\n  <Image src="res://angular" stretch="none" dock="top" />\n',
+      '<DockLayout stretchLastChild="false">\n  <Image src="res://nativescript" stretch="none" dock="left"></Image>\n  <Image src="res://angular" stretch="none" dock="top"></Image>\n',
     after: '</DockLayout>'
   },
   {
     name: '(10) dock layout stretchlastchild = true',
     instructions: {
       en:
-        "<p>Now that you have a rough idea of what the <code>&lt;DockLayout&gt;</code> can do, let's look more closely at that <code>stretchLastChild</code> property. Setting <code>stretchLastChild</code> to true actually lets you \"dock\" an item in the middle of the parent container. The <i>LastChild</i> part of the name is key to telling you that the last element listed is the one that will get <i>stretched</i> or <i>centered</i> in your layout.</p><p>This time, go ahead and set the <code>stretchLastChild</code> to true and see what happens to our elements.</p><p>⚠️ Like in the last lesson, the final element positions might not be quite what you expect, as the docking containers end up looking like this: <img src='https://docs.nativescript.org/img/modules/layouts/dock-layout2.png' width='15%' align='top' /></p>"
+        "<p>Now that you have a rough idea of what the <code>&lt;DockLayout&gt;</code> can do, let's look more closely at that <code>stretchLastChild</code> property. Setting <code>stretchLastChild</code> to true actually lets you \"dock\" an item in the middle of the parent container. The <i>LastChild</i> part of the name is key to telling you that the last element listed is the one that will get <i>stretched</i> or <i>centered</i> in your layout.</p><p>This time, go ahead and set the <code>stretchLastChild</code> to true and see what happens to our elements.</p><p>⚠️ Like in the last lesson, the final element positions might not be quite what you expect, as the docking containers end up looking like this: <img src='https://docs.nativescript.org/img/modules/layouts/dock-layout2.png' width='15%' align='top'></Image></p>"
     },
     board: 'navw',
     result: [
@@ -208,7 +210,7 @@ var levels = [
     preselect: [30, 30],
     before: '',
     after:
-      '  <Image src="res://nativescript" stretch="none" dock="left" />\n  <Image src="res://angular" stretch="none" dock="top" />\n  <Image src="res://vue" stretch="none" dock="right" />\n  <Image src="res://webpack" stretch="none" dock="bottom" />\n</DockLayout>'
+      '  <Image src="res://nativescript" stretch="none" dock="left"></Image>\n  <Image src="res://angular" stretch="none" dock="top"></Image>\n  <Image src="res://vue" stretch="none" dock="right"></Image>\n  <Image src="res://webpack" stretch="none" dock="bottom"></Image>\n</DockLayout>'
   },
   {
     name: '(11) grid layout simple column',
@@ -219,11 +221,11 @@ var levels = [
     board: 'ir',
     result: [{ top: 100, left: 50 }, { top: 100, left: 135 }],
     answer:
-      '<Image src="res://nativescripting" stretch="none" row="0" col="0" />\n<Image src="res://redux" stretch="none" row="0" col="1" />\n',
+      '<Image src="res://nativescripting" stretch="none" row="0" col="0"></Image>\n<Image src="res://redux" stretch="none" row="0" col="1"></Image>\n',
     lines: 2,
     hint:
-      '  <Image src="res://nativescripting" stretch="none" row="0" col="" />\n  <Image src="res://redux" stretch="none" row="0" col="" />\n',
-    preselect: [65, 65],
+      '<Image src="res://nativescripting" stretch="none" row="0" col=""></Image>\n<Image src="res://redux" stretch="none" row="0" col=""></Image>\n',
+    preselect: [63, 63],
     before: '<GridLayout columns="auto, auto" rows="auto">',
     after: '</GridLayout>'
   },
@@ -243,11 +245,11 @@ var levels = [
       { top: 280, left: 135 }
     ],
     answer:
-      '<Image src="res://nativescript" stretch="none" row="0" col="0" />\n<Image src="res://angular" stretch="none" row="0" col="1" />\n<Image src="res://vue" stretch="none" row="1" col="0" />\n<Image src="res://webpack" stretch="none" row="1" col="1" />\n<Image src="res://nativescripting" stretch="none" row="2" col="0" />\n<Image src="res://redux" stretch="none" row="2" col="1" />\n',
+      '<Image src="res://nativescript" stretch="none" row="0" col="0"></Image>\n<Image src="res://angular" stretch="none" row="0" col="1"></Image>\n<Image src="res://vue" stretch="none" row="1" col="0"></Image>\n<Image src="res://webpack" stretch="none" row="1" col="1"></Image>\n<Image src="res://nativescripting" stretch="none" row="2" col="0"></Image>\n<Image src="res://redux" stretch="none" row="2" col="1"></Image>\n',
     lines: 6,
     hint:
-      '  <Image src="res://nativescript" stretch="none" row="" col="0" />\n  <Image src="res://angular" stretch="none" row="" col="1" />\n  <Image src="res://vue" stretch="none" row="" col="0" />\n  <Image src="res://webpack" stretch="none" row="" col="1" />\n  <Image src="res://nativescripting" stretch="none" row="" col="0" />\n  <Image src="res://redux" stretch="none" row="" col="1" />\n',
-    preselect: [54, 54],
+      '<Image src="res://nativescript" stretch="none" row="" col="0"></Image>\n<Image src="res://angular" stretch="none" row="" col="1"></Image>\n<Image src="res://vue" stretch="none" row="" col="0"></Image>\n<Image src="res://webpack" stretch="none" row="" col="1"></Image>\n<Image src="res://nativescripting" stretch="none" row="" col="0"></Image>\n<Image src="res://redux" stretch="none" row="" col="1"></Image>\n',
+    preselect: [52, 52],
     before: '<GridLayout columns="auto, auto" rows="auto, auto, auto">',
     after: '</GridLayout>'
   },
@@ -265,11 +267,11 @@ var levels = [
       { top: 190, left: 50 }
     ],
     answer:
-      '<Image src="res://nativescript" stretch="none" row="0" col="0" />\n<Image src="res://angular" stretch="none" row="0" col="1" />\n<Image src="res://vue" stretch="none" row="0" col="2" />\n<Image src="res://preact" stretch="none" row="1" col="0" colSpan="3" />\n',
+      '<Image src="res://nativescript" stretch="none" row="0" col="0"></Image>\n<Image src="res://angular" stretch="none" row="0" col="1"></Image>\n<Image src="res://vue" stretch="none" row="0" col="2"></Image>\n<Image src="res://preact" stretch="none" row="1" col="0" colSpan="3"></Image>\n',
     lines: 4,
     hint:
-      '  <Image src="res://nativescript" stretch="none" row="0" col="0" />\n  <Image src="res://angular" stretch="none" row="0" col="1" />\n  <Image src="res://vue" stretch="none" row="0" col="2" />\n  <Image src="res://preact" stretch="none" row="1" col="0" colSpan="" />\n',
-    preselect: [258, 258],
+      '<Image src="res://nativescript" stretch="none" row="0" col="0"></Image>\n<Image src="res://angular" stretch="none" row="0" col="1"></Image>\n<Image src="res://vue" stretch="none" row="0" col="2"></Image>\n<Image src="res://preact" stretch="none" row="1" col="0" colSpan=""></Image>\n',
+    preselect: [268, 268],
     before: '<GridLayout columns="auto, auto, auto" rows="auto, auto">',
     after: '</GridLayout>'
   },
@@ -277,7 +279,7 @@ var levels = [
     name: '(14) grid layout rowspan',
     instructions: {
       en:
-        "<p>Great, now let's flip our <code>&lt;GridLayout&gt;</code> on its head 🙃 and learn about the <code>rowSpan</code> property. Again, like with an HTML table, with <code>rowSpan></code> we can <i>span</i> an element across multiple rows.</p><p>Now we can get a little more crafty with our layout and line up our image elements in a unique way. Go ahead and use the <code>rowSpan</code> property on elements in the first two columns so that there is one image in the first column, two in the second, and three in the third.</p>"
+        "<p>Great, now let's flip our <code>&lt;GridLayout&gt;</code> on its head 🙃 and learn about the <code>rowSpan</code> property. Again, like with an HTML table, with <code>rowSpan</code> we can <i>span</i> an element across multiple rows.</p><p>Now we can get a little more crafty with our layout and line up our image elements in a unique way. Go ahead and use the <code>rowSpan</code> property on elements in the first two columns so that there is one image in the first column, two in the second, and three in the third.</p>"
     },
     board: 'nawvir',
     result: [
@@ -289,14 +291,14 @@ var levels = [
       { top: 280, left: 220 }
     ],
     answer:
-      '<Image src="res://nativescript" stretch="none" row="0" col="0" rowSpan="3" />\n<Image src="res://angular" stretch="none" row="0" col="1" />\n<Image src="res://vue" stretch="none" row="1" col="1" rowSpan="2" />\n',
+      '<Image src="res://nativescript" row="0" col="0" rowSpan="3"></Image>\n<Image src="res://angular" row="0" col="1"></Image>\n<Image src="res://vue" row="1" col="1" rowSpan="2"></Image>\n',
     lines: 3,
     hint:
-      '  <Image src="res://nativescript" stretch="none" row="0" col="0" rowSpan="" />\n  <Image src="res://angular" stretch="none" row="0" col="1" />\n  <Image src="res://vue" stretch="none" row="1" col="1" rowSpan="" />\n',
-    preselect: [258, 258],
+      '<Image src="res://nativescript" row="0" col="0" rowSpan=""></Image>\n<Image src="res://angular" row="0" col="1"></Image>\n<Image src="res://vue" row="1" col="1" rowSpan=""></Image>\n',
+    preselect: [57, 57],
     before: '<GridLayout columns="auto, auto, auto" rows="auto, auto, auto">',
     after:
-      '  <Image src="res://webpack" stretch="none" row="0" col="2" />\n  <Image src="res://nativescripting" stretch="none" row="1" col="2" />\n  <Image src="res://redux" stretch="none" row="2" col="2" />\n</GridLayout>'
+      '  <Image src="res://webpack" row="0" col="2"></Image>\n  <Image src="res://nativescripting" row="1" col="2"></Image>\n  <Image src="res://redux" row="2" col="2"></Image>\n</GridLayout>'
   },
   {
     name: '(15) grid layout fixed/auto sizing',
@@ -317,7 +319,7 @@ var levels = [
     preselect: [21, 21],
     before: '',
     after:
-      '  <Image src="res://webpack" stretch="none" row="0" col="0" />\n  <Image src="res://nativescripting" stretch="none" row="0" col="1" />\n  <Image src="res://redux" stretch="none" row="1" col="0" />\n  <Image src="res://preact" stretch="none" row="1" col="1" />\n</GridLayout>'
+      '  <Image src="res://webpack" stretch="none" row="0" col="0"></Image>\n  <Image src="res://nativescripting" stretch="none" row="0" col="1"></Image>\n  <Image src="res://redux" stretch="none" row="1" col="0"></Image>\n  <Image src="res://preact" stretch="none" row="1" col="1"></Image>\n</GridLayout>'
   },
   {
     name: '(16) grid layout star sizing',
@@ -338,7 +340,7 @@ var levels = [
     preselect: [21, 21],
     before: '',
     after:
-      '  <Image src="res://nativescript" stretch="none" row="0" col="0" />\n  <Image src="res://angular" stretch="none" row="0" col="1" />\n  <Image src="res://vue" stretch="none" row="1" col="0" />\n  <Image src="res://preact" stretch="none" row="1" col="1" />\n</GridLayout>'
+      '  <Image src="res://nativescript" stretch="none" row="0" col="0"></Image>\n  <Image src="res://angular" stretch="none" row="0" col="1"></Image>\n  <Image src="res://vue" stretch="none" row="1" col="0"></Image>\n  <Image src="res://preact" stretch="none" row="1" col="1"></Image>\n</GridLayout>'
   }
 ];
 
