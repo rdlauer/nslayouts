@@ -3,7 +3,7 @@ var levels = [
     name: '(1) stack layout vertical (default)',
     instructions: {
       en:
-        "<p>Get ready to Learn NativeScript Layouts! Inspired by <a href='http://flexboxfroggy.com/' target='_blank'>Flexbox Froggy</a>, this tool is a fun and easy way for you to learn about mobile app layouts with NativeScript. Each level presents a different mobile app view that needs native UI elements laid out a certain way. NativeScript provides a variety of layout tags to help with this:</p><ul><li><code>&lt;StackLayout&gt;</code> <i>stacks</i> components on top of (or next to) each other;</li><li><code>&lt;WrapLayout&gt;</code> uses available space to <i>wrap</i> components on new rows/cols;</li><li><code>&lt;AbsoluteLayout&gt;</code> places components with <i>absolute</i> x/y coordinates;</li><li><code>&lt;GridLayout&gt;</code> acts like an HTML table, with rows and cols;</li><li><code>&lt;DockLayout&gt;</code> positions components in <i>docked</i> containers (top/bottom/left/right);</li><li><code>&lt;FlexboxLayout&gt;</code> lets you leverage CSS flexbox.</li></ul><p>Let's start with a <code>&lt;StackLayout&gt;</code>. By default, a <code>&lt;StackLayout&gt;</code> will stack components vertically. Change the code below to make it so the UI components align each other, in a <i>horizontal</i> orientation 😉.</p>"
+        "<p>Get ready to Learn NativeScript Layouts! Inspired by <a href='http://flexboxfroggy.com/' target='_blank'>Flexbox Froggy</a>, this tool is a fun and easy way for you to learn about mobile app layouts with NativeScript. Each level presents a different mobile app view that needs native UI elements laid out a certain way. NativeScript provides a variety of layout tags to help with this:</p><ul><li><code>&lt;StackLayout&gt;</code> <i>stacks</i> components on top of (or next to) each other;</li><li><code>&lt;WrapLayout&gt;</code> uses available space to <i>wrap</i> components on new rows/columns;</li><li><code>&lt;AbsoluteLayout&gt;</code> places components with <i>absolute</i> top/left coordinates;</li><li><code>&lt;GridLayout&gt;</code> acts like an HTML table, with rows and columns;</li><li><code>&lt;DockLayout&gt;</code> positions components in <i>docked</i> containers (top/bottom/left/right);</li><li><code>&lt;FlexboxLayout&gt;</code> lets you leverage CSS flexbox.</li></ul><p>Let's start with a <code>&lt;StackLayout&gt;</code>. By default, a <code>&lt;StackLayout&gt;</code> will stack components vertically. Change the code below to make it so the UI components align each other, in a <i>horizontal</i> orientation 😉.</p>"
     },
     board: 'nav',
     result: [
@@ -45,7 +45,7 @@ var levels = [
     name: '(3) stack layout horizontal and vertical alignment',
     instructions: {
       en:
-        '<p><b>Great!</b> You just learned how to center some components on the screen 😎.</p><p>But what if we wanted to center align our components horizontally and vertically?</p><p>In the previous level, you added the <i>center</i> attribute to the <code>horizontalAlignment</code> property. In this lesson we will have to add a <code>verticalAlignment</code> property. Go for it:</p>'
+        '<p><b>Great!</b> You just learned how to center some components on the screen 😎.</p><p>But what if we wanted to center align our components horizontally <i>and</i> vertically?</p><p>In the previous level, you added the <i>center</i> attribute to the <code>horizontalAlignment</code> property. In this lesson we will have to add a <code>verticalAlignment</code> property. Go for it:</p>'
     },
     board: 'vr',
     result: [{ top: 290, left: 110 }, { top: 290, left: 200 }],
@@ -131,7 +131,7 @@ var levels = [
     name: '(7) absolute layout standard',
     instructions: {
       en:
-        '<p>Let\'s keep marching on 🚶! The <code>&lt;WrapLayout&gt;</code> is pretty easy to grok, so let\'s move on to the next layout: <code>&lt;AbsoluteLayout&gt;</code></p><p>If you\'re a web developer, you may shy away from absolute positioning of elements in favor of responsive layouts. The same rules generally apply to NativeScript too. Since screen sizes vary greatly, you only want to use an <code>&lt;AbsoluteLayout&gt;</code> in the most predictable situations where you can safely position components using top/left values that are relative to the layout container.</p><p>Confused? Don\'t be. In the code editor, simply assign <i>top</i> and <i>left</i> properties to each <code>Image</code> component, like so:</p><ul><li><code>&lt;Image src="res://nativescript" stretch="none" top="10" left="10" /&gt;</code></li><li><code>[...] top="10" left="170"</code></li><li><code>[...] top="170" left="10"</code></li><li><code>[...] top="170" left="170"</code></li></ul><p><i>The values of the top/left properties are "density-independent pixels" (a unit of measure to allow layouts to be designed independent of screen density).</i></p>'
+        '<p>Let\'s keep marching on 🚶! The <code>&lt;WrapLayout&gt;</code> is pretty easy to grok, so let\'s move on to the next layout: <code>&lt;AbsoluteLayout&gt;</code></p><p>If you\'re a web developer, you may shy away from absolute positioning of elements in favor of responsive layouts. The same rules generally apply to NativeScript too. Since screen sizes vary greatly, you only want to use an <code>&lt;AbsoluteLayout&gt;</code> in the most predictable situations where you can safely position components using top/left values that are relative to the layout container.</p><p>Confused? Don\'t be. In the code editor, simply assign <i>top</i> and <i>left</i> properties to each <code>Image</code> component, like so:</p><ul><li><code>&lt;Image src="res://nativescript" stretch="none" top="10" left="10" /&gt;</code></li><li><code>[...] top="10" left="170"</code></li><li><code>[...] top="170" left="10"</code></li><li><code>[...] top="170" left="170"</code></li></ul><p>⚠️ Tip: The values of the top/left properties are "density-independent pixels" (a unit of measure to allow layouts to be designed independent of screen density).</p>'
     },
     board: 'navp',
     result: [
@@ -153,7 +153,7 @@ var levels = [
     name: '(8) absolute layout overlapping',
     instructions: {
       en:
-        "<p><b>Great!</b> But it's time to take it up another notch. The real power of the <code>&lt;AbsoluteLayout&gt;</code> can be seen when you need to position components in ways you wouldn't normally be able to position them. For example, say you want to overlap components. How would we go about doing that?</p><p>The obvious way is to simply set new top/left values and call it good. We are going to try a different way, and that's with adding a <i>margin</i> property to an element. Yes, the same CSS margin you use on the web!</p><p>In this example, go ahead and add a margin of 30 to the second <code>Image</code> element and see what that does.</p>"
+        "<p><b>Great!</b> But it's time to take it up another notch. The real power of the <code>&lt;AbsoluteLayout&gt;</code> can be seen when you need to position components in ways you can't with other layout containers. For example, say you want to <i>overlap</i> components. How would we go about doing that?</p><p>The obvious way is to simply set new top/left values and call it good. We are going to try a different way though, and that's with adding a <i>margin</i> property to an element. Yes, the same CSS margin you use on the web!</p><p>In this example, go ahead and add a margin of 30 to the second <code>Image</code> element and see what that does. 🧐</p>"
     },
     board: 'wr',
     result: [{ top: 100, left: 50 }, { top: 130, left: 80 }],
@@ -170,7 +170,7 @@ var levels = [
     name: '(9) dock layout stretchlastchild = false',
     instructions: {
       en:
-        "<p>You're really getting the hang of this aren't you? 😎 But I think it's time we moved on to the <code>&lt;DockLayout&gt;</code>.</p><p>You generally use the <code>&lt;DockLayout&gt;</code> when you want to position elements up against the sides of its parent container (often the page/view itself) (without having to figure out top/left coordinates of the <code>&lt;AbsoluteLayout&gt;</code> for instance).</p><p>Let's start simple by focusing on <i>docking</i> our icons on the left/top/right/bottom of our screen. Pay attention to the <code>stretchLastChild</code> property, as that will play into what we do in the next lesson.</p><p>⚠️ Don't be surprised if the final element positions look odd, as you have to remember the docking containers end up looking like this: <img src='https://docs.nativescript.org/img/modules/layouts/dock-layout1.png' width='15%' align='top' /></p>"
+        "<p>You're really getting the hang of this aren't you? 😎 But I think it's time we moved on to the <code>&lt;DockLayout&gt;</code>.</p><p>You generally use the <code>&lt;DockLayout&gt;</code> when you want to position elements up against the sides of its parent container (often the page/view itself).</p><p>Let's start simple by focusing on <i>docking</i> our icons on the left/top/right/bottom of our screen. Pay attention to the <code>stretchLastChild</code> property, as that will play into what we do in the next lesson.</p><p>⚠️ Don't be surprised if the final element positions look odd, as you have to remember the docking containers end up looking like this: <img src='https://docs.nativescript.org/img/modules/layouts/dock-layout1.png' width='15%' align='top' /></p>"
     },
     board: 'navw',
     result: [
@@ -193,14 +193,14 @@ var levels = [
     name: '(10) dock layout stretchlastchild = true',
     instructions: {
       en:
-        "<p>Now that you have a rough idea of what the <code>&lt;DockLayout&gt;</code> can do, let's look more closely at that <code>stretchLastChild</code> property. Contrary to its name, setting <code>stretchLastChild</code> to true actually lets you \"dock\" an item to the center of the parent container. The <i>LastChild</i> part of the name is key to telling you that the last element listed is the one that will get <i>stretched</i> or <i>centered</i> in your layout.</p><p>This time, go ahead and set the <code>stretchLastChild</code> to true and see what happens to our elements.</p><p>⚠️ Like in the last lesson, the final element positions might not be quite what you expect, as the docking containers end up looking like this: <img src='https://docs.nativescript.org/img/modules/layouts/dock-layout2.png' width='15%' align='top' /></p>"
+        "<p>Now that you have a rough idea of what the <code>&lt;DockLayout&gt;</code> can do, let's look more closely at that <code>stretchLastChild</code> property. Setting <code>stretchLastChild</code> to true actually lets you \"dock\" an item in the middle of the parent container. The <i>LastChild</i> part of the name is key to telling you that the last element listed is the one that will get <i>stretched</i> or <i>centered</i> in your layout.</p><p>This time, go ahead and set the <code>stretchLastChild</code> to true and see what happens to our elements.</p><p>⚠️ Like in the last lesson, the final element positions might not be quite what you expect, as the docking containers end up looking like this: <img src='https://docs.nativescript.org/img/modules/layouts/dock-layout2.png' width='15%' align='top' /></p>"
     },
     board: 'navw',
     result: [
       { top: 100, left: 50 },
       { top: 100, left: 150 },
       { top: 190, left: 260 },
-      { top: 290, left: 150 }
+      { top: 190, left: 150 }
     ],
     answer: '<DockLayout stretchLastChild="true">',
     lines: 1,
@@ -214,10 +214,10 @@ var levels = [
     name: '(11) grid layout simple column',
     instructions: {
       en:
-        "<p>🏆 for you! But...you're not done yet. This is a good thing though, as we are about to start working with the most powerful layout container of them all, the <code>&lt;GridLayout&gt;</code></p><p>It's easiest to think of a <code>&lt;GridLayout&gt;</code> the same way you think of an HTML table. It has rows and columns, and you specify the size of your table/grid along with which row/col each element should be placed in. Simple enough, right?</p><p>Let's start this lesson by focusing on columns. We'll make a two column layout with <code>auto</code> sizing on both columns (more on this later). You just need to plug in the appropriate 0-based index column in each element below.</p>"
+        "<p>🏆 for you! But...you're not done yet!</p><p>This is a good thing, as we are about to start working with the most powerful layout container of them all: the <code>&lt;GridLayout&gt;</code></p><p>It's easiest to think of a <code>&lt;GridLayout&gt;</code> the same way you think of an HTML table. It has rows and columns, and you specify the size of your rows/columns (along with which row/column each element should be placed into). Simple enough, right?</p><p>Let's start this lesson by focusing on columns. We'll make a two column layout with <code>auto</code> sizing on both columns (more on this later). You just need to plug in the appropriate 0-based index column in each element below.</p>"
     },
     board: 'ir',
-    result: [{ top: 100, left: 110 }, { top: 100, left: 195 }],
+    result: [{ top: 100, left: 50 }, { top: 100, left: 135 }],
     answer:
       '<Image src="res://nativescripting" stretch="none" row="0" col="0" />\n<Image src="res://redux" stretch="none" row="0" col="1" />\n',
     lines: 2,
@@ -231,16 +231,16 @@ var levels = [
     name: '(12) grid layout simple column + simple row',
     instructions: {
       en:
-        "<p>Alright alright...I know that was too easy. Let's step it up a little and add some <code>rows</code> to our <code>&lt;GridLayout&gt;</code></p><p>Again, like with HTML table columns, we have rows that act the same way.</p><p>In this lesson, let's organize six image elements in a two column/three row layout. Again, we will explain what the heck <code>auto</code> means in a later lesson.</p>"
+        "<p>Alright alright...I know that was too easy. 😅</p><p>Let's step it up a little and add some <code>rows</code> to our <code>&lt;GridLayout&gt;</code></p><p>Again, like with HTML table columns, we have rows that act the same way.</p><p>In this lesson, let's organize six image elements in a two column/three row layout. Again, we will explain what the heck <code>auto</code> means in a later lesson.</p>"
     },
     board: 'navwir',
     result: [
-      { top: 100, left: 110 },
-      { top: 100, left: 195 },
-      { top: 190, left: 110 },
-      { top: 190, left: 195 },
-      { top: 280, left: 110 },
-      { top: 280, left: 195 }
+      { top: 100, left: 50 },
+      { top: 100, left: 135 },
+      { top: 190, left: 50 },
+      { top: 190, left: 135 },
+      { top: 280, left: 50 },
+      { top: 280, left: 135 }
     ],
     answer:
       '<Image src="res://nativescript" stretch="none" row="0" col="0" />\n<Image src="res://angular" stretch="none" row="0" col="1" />\n<Image src="res://vue" stretch="none" row="1" col="0" />\n<Image src="res://webpack" stretch="none" row="1" col="1" />\n<Image src="res://nativescripting" stretch="none" row="2" col="0" />\n<Image src="res://redux" stretch="none" row="2" col="1" />\n',
@@ -255,14 +255,14 @@ var levels = [
     name: '(13) grid layout colspan',
     instructions: {
       en:
-        "<p>Yay! Now we can look at the next HTML-like attribute of the <code>&lt;GridLayout&gt;</code>, <code>colSpan</code>. Just like with HTML tables, we can <i>span</i> an element across multiple columns by using this property.</p><p>Let's set it up so that the image in the second row spans across all three columns.</p>"
+        "<p>Yay! That was a bit of a tough one. Even if you used <i>Help!</i>, I won't tell anyone. 😉</p><p>Now we can look at the next HTML-like attribute of the <code>&lt;GridLayout&gt;</code>, <code>colSpan</code>. Just like with HTML tables, we can <i>span</i> an element across multiple columns by using this property.</p><p>Let's set it up so that the image in the second row spans across all three columns.</p><p>Admittedly, using images for this exercise doesn't <i>quite</i> make sense, but trust me when I say the image is spanning all three columns. 😜</p>"
     },
     board: 'navp',
     result: [
-      { top: 100, left: 70 },
-      { top: 100, left: 155 },
-      { top: 100, left: 240 },
-      { top: 190, left: 155 }
+      { top: 100, left: 50 },
+      { top: 100, left: 135 },
+      { top: 100, left: 220 },
+      { top: 190, left: 50 }
     ],
     answer:
       '<Image src="res://nativescript" stretch="none" row="0" col="0" />\n<Image src="res://angular" stretch="none" row="0" col="1" />\n<Image src="res://vue" stretch="none" row="0" col="2" />\n<Image src="res://preact" stretch="none" row="1" col="0" colSpan="3" />\n',
@@ -277,16 +277,16 @@ var levels = [
     name: '(14) grid layout rowspan',
     instructions: {
       en:
-        "<p>Great, now let's flip our <code>&lt;GridLayout&gt;</code> on its head and learn about the <code>rowSpan</code> property. Again, like with an HTML table, with <code>rowSpan></code> we can <i>span</i> an element across multiple rows.</p><p>Now we can get a little more crafty with our layout and line up our image elements in a unique way. Go ahead and use the <code>rowSpan</code> property on elements in the first two columns so that there is one image in the first column, two in the second, and three in the third.</p>"
+        "<p>Great, now let's flip our <code>&lt;GridLayout&gt;</code> on its head 🙃 and learn about the <code>rowSpan</code> property. Again, like with an HTML table, with <code>rowSpan></code> we can <i>span</i> an element across multiple rows.</p><p>Now we can get a little more crafty with our layout and line up our image elements in a unique way. Go ahead and use the <code>rowSpan</code> property on elements in the first two columns so that there is one image in the first column, two in the second, and three in the third.</p>"
     },
     board: 'nawvir',
     result: [
-      { top: 100, left: 70 },
-      { top: 100, left: 155 },
-      { top: 100, left: 240 },
-      { top: 190, left: 155 },
-      { top: 190, left: 240 },
-      { top: 280, left: 240 }
+      { top: 100, left: 50 },
+      { top: 100, left: 135 },
+      { top: 100, left: 220 },
+      { top: 190, left: 135 },
+      { top: 190, left: 220 },
+      { top: 280, left: 220 }
     ],
     answer:
       '<Image src="res://nativescript" stretch="none" row="0" col="0" rowSpan="3" />\n<Image src="res://angular" stretch="none" row="0" col="1" />\n<Image src="res://vue" stretch="none" row="1" col="1" rowSpan="2" />\n',
@@ -302,14 +302,14 @@ var levels = [
     name: '(15) grid layout fixed/auto sizing',
     instructions: {
       en:
-        '<p>Alright - you think you have the <code>&lt;GridLayout&gt;</code> mastered? Haha! Think again! It\'s time to look into how we <i>size</i> our columns.</p><p>Recall in previous lessons we used syntax like <code>&lt;GridLayout columns="auto, auto" rows="auto, auto"&gt;</code>? When we use <code>auto</code> we are telling our layout to <i>automatically</i> size the columns/rows based on the actual size of the element. What if we want to use a specific width on a column though? Luckily we can handle that by simply substituting in a numeric value.</p><p>Let\'s space out our images a little and use a fixed with of <b>200</b> on our first column and <b>200</b> on our first row.</p>'
+        '<p>Alright - you think you have the <code>&lt;GridLayout&gt;</code> mastered? Haha! Think again! 😂</p><p>It\'s time to look into how we <i>size</i> our columns.</p><p>Recall in previous lessons we used syntax like <code>columns="auto" rows="auto"</code>? When we use <code>auto</code> we are telling our layout to <i>automatically</i> size the columns/rows based on the actual size of the element.</p><p>What if we wanted to use a <i>specific</i> width on a column though? Luckily we can handle that by simply substituting in a numeric value.</p><p>Let\'s space out our images a little and use a fixed with of <b>200</b> on our first column and <b>200</b> on our first row.</p>'
     },
     board: 'wirp',
     result: [
-      { top: 100, left: 70 },
-      { top: 100, left: 240 },
-      { top: 280, left: 70 },
-      { top: 280, left: 240 }
+      { top: 100, left: 50 },
+      { top: 100, left: 220 },
+      { top: 280, left: 50 },
+      { top: 280, left: 220 }
     ],
     answer: '<GridLayout columns="200, auto" rows="200, auto">\n',
     lines: 1,
@@ -323,14 +323,14 @@ var levels = [
     name: '(16) grid layout star sizing',
     instructions: {
       en:
-        "<p>Almost done! 🏁</p><p>Let's wrap up the <code>&lt;GridLayout&gt;</code> by looking at the final way to <i>size</i> a row or column, and that is with <code>star</code> sizing...or <code>*</code rather. Star sizing allows your row/column to take up as much space as possible, <i>after</i> sizing for fixed width and auto width columns (proportionally divided over all of the star-sized columns). Confused yet 😕? It just means that using star sizing will make sure your grid takes up as much space as possible.</p><p>Let's take a look at an example that effectively re-creates the placement of images from our last lesson. But this time we are going to use star sizing and add <i>multipliers</i> to get double the space on the first column (hint: <code>2*</code> gives you twice the space of <code>*</code>).</p>"
+        "<p>🏁 Almost done! 🏁</p><p>Let's wrap up the <code>&lt;GridLayout&gt;</code> by looking at the final way to <i>size</i> a row or column, and that is with <code>star</code> sizing...or <code>*</code> rather. Star sizing allows your row/column to take up as much space as possible, <i>after</i> sizing for fixed width and auto width columns (proportionally divided over all of the star-sized columns). Confused yet 😕? It just means that using star sizing will make sure your grid's rows and columns take up as much space as possible.</p><p>Let's take a look at an example that is similar to the placement of images from our last lesson. But this time we are going to use star sizing and add <i>multipliers</i> to get double the space on the first column and first row (hint: <code>2*</code> gives you twice the space of <code>*</code>).</p>"
     },
     board: 'navp',
     result: [
-      { top: 100, left: 70 },
-      { top: 100, left: 240 },
-      { top: 280, left: 70 },
-      { top: 280, left: 240 }
+      { top: 100, left: 50 },
+      { top: 100, left: 250 },
+      { top: 400, left: 50 },
+      { top: 400, left: 250 }
     ],
     answer: '<GridLayout columns="2*, *" rows="2*, *">\n',
     lines: 1,
@@ -346,7 +346,7 @@ var levelWin = {
   name: 'win',
   instructions: {
     en:
-      "<p style='padding-top:50px'>🎉🎉🎉 <b>Amazing! I always knew you could do it.</b> 🎉🎉🎉</p><p>You are now an (uncertified) NativeScript layout container expert! 🍾<p><p>I bet you are wondering where to go from here? Boy oh boy do I have some resources for you:</p><ul><li>Learn about using the <code>&lt;FlexboxLayout&gt;</code> container (which is an implementation of the CSS Flexible Box Layout) on <a href='http://flexboxfroggy.com/' target='_blank'>FlexboxFroggy.com</a>;</li><li>Read Jen Looper's great article on <a href='https://developer.telerik.com/featured/demystifying-nativescript-layouts/' target='_blank'>Demystifying NativeScript Layouts</a>;</li><li>Learn more about NativeScript by going through the <a href='http://docs.nativescript.org/tutorial/chapter-0' target='_blank'>JavaScript</a> or <a href='http://docs.nativescript.org/angular/tutorial/ng-chapter-0' target='_blank'>Angular</a> getting started tutorials;</li><li>Just have fun building cross-platform native apps with <a href='https://www.nativescript.org/' target='_blank'>NativeScript</a>!</ol>"
+      "<p style='padding-top:20px'>🎉🎉🎉 <b>Amazing! I always knew you could do it, never had a doubt!</b> 🎉🎉🎉</p><p>Pop the bubbly 🍾 because you are now an (uncertified) NativeScript layout container expert!<p><p>I bet you are wondering where to go from here? Boy oh boy do I have some resources for you:</p><ul><li>Learn about using the <code>&lt;FlexboxLayout&gt;</code> (based on CSS flexbox) on <a href='http://flexboxfroggy.com/' target='_blank'>Flexbox Froggy</a>;</li><li>Read Jen Looper's great article on <a href='https://developer.telerik.com/featured/demystifying-nativescript-layouts/' target='_blank'>Demystifying NativeScript Layouts</a>;</li><li>Learn more about NativeScript by going through the <a href='http://docs.nativescript.org/tutorial/chapter-0' target='_blank'>JavaScript</a> or <a href='http://docs.nativescript.org/angular/tutorial/ng-chapter-0' target='_blank'>Angular</a> getting started tutorials;</li><li>Or just have fun building cross-platform native apps with <a href='https://www.nativescript.org/' target='_blank'>NativeScript</a> and <a href='https://www.nativescript.org/nativescript-sidekick' target='_blank'>NativeScript Sidekick</a>!</ol>"
   },
   board: 'n',
   result: [],
