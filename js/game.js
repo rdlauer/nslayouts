@@ -282,7 +282,8 @@ var game = {
     var lines = level.lines;
     $('#code')
       .height(20 * lines)
-      .data('lines', lines);
+      .data('lines', lines)
+      .scrollTop(0);
 
     // if the answer is the first line of code, remove indentation
     if (level.before.length == 0) {

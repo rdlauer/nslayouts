@@ -2,26 +2,27 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   min-height: 100%;
 }
 
 @font-face {
-    font-family: 'Geomanist';
-    src: url('geomanist-regular-webfont.eot');
-    src: url('geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('geomanist-regular-webfont.woff2') format('woff2'),
-         url('geomanist-regular-webfont.woff') format('woff'),
-         url('geomanist-regular-webfont.ttf') format('truetype'),
-         url('geomanist-regular-webfont.svg#geomanistregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Geomanist';
+  src: url('geomanist-regular-webfont.eot');
+  src: url('geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('geomanist-regular-webfont.woff2') format('woff2'),
+    url('geomanist-regular-webfont.woff') format('woff'),
+    url('geomanist-regular-webfont.ttf') format('truetype'),
+    url('geomanist-regular-webfont.svg#geomanistregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-html[lang="fa"] #docs,
-html[lang="fa"] #instructions,
-html[lang="fa"] #credits .translate,
-a[href="#fa"] {
+html[lang='fa'] #docs,
+html[lang='fa'] #instructions,
+html[lang='fa'] #credits .translate,
+a[href='#fa'] {
   direction: rtl;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
@@ -35,6 +36,11 @@ body {
   font-family: Geomanist, sans-serif;
 }
 
+#page-content {
+  width: 1500px;
+  margin: 0 auto;
+}
+
 #sidebar {
   /* width: 50%;
   min-width: 300px; */
@@ -43,6 +49,12 @@ body {
   padding: 2em;
   background-color: #3e61f5;
   font-size: 16px;
+  float: left;
+  overflow: hidden;
+}
+
+#view {
+  float: right;
 }
 
 h1 {
@@ -99,8 +111,8 @@ a:hover {
   position: absolute;
   top: -12px;
   left: 12px;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   border-bottom: 12px solid #2c3e50;
@@ -162,7 +174,7 @@ pre {
   padding: 10px 6px;
   text-align: right;
   background-color: #999;
-  color: #D5D5D5;
+  color: #d5d5d5;
 }
 
 #code {
@@ -180,8 +192,8 @@ pre {
 }
 
 .code-top-line {
-	width: 100% !important;
-	margin-left: 0px !important;
+  width: 100% !important;
+  margin-left: 0px !important;
 }
 
 #level-counter {
@@ -300,7 +312,7 @@ pre {
 button {
   display: inline-block;
   padding: 0.4em 0.8em;
-  background-color: #D11606;
+  background-color: #d11606;
   border: none;
   border-radius: 4px;
   font-family: Geomanist, sans-serif;
@@ -321,7 +333,7 @@ button:active {
 }
 
 button:not(.disabled):hover {
-  background-color: #F12D22;
+  background-color: #f12d22;
 }
 
 #next {
@@ -336,13 +348,13 @@ button:not(.disabled):hover {
 }
 
 #help {
-	position: absolute;
-	right: 5em;
-	bottom: 1em;
+  position: absolute;
+  right: 5em;
+  bottom: 1em;
 }
 
 .credits {
-  margin-top: 1.5em;  
+  margin-top: 1.5em;
   line-height: 1.5em;
   text-align: center;
   font-size: 12px;
@@ -428,12 +440,12 @@ button:not(.disabled):hover {
 }
 
 #holding {
-	background-color: #dddddd;
-	border: 2px solid #999999;
-	border-radius: 4px;
-	display: inline-block;
-	height: 100px;
-	padding: 7px;
+  background-color: #dddddd;
+  border: 2px solid #999999;
+  border-radius: 4px;
+  display: inline-block;
+  height: 100px;
+  padding: 7px;
 }
 
 .lilypad,
@@ -448,10 +460,10 @@ button:not(.disabled):hover {
 }
 
 .frog.bounceOutUp {
-  -webkit-animation-delay: .6s;
-  -moz-animation-delay: .6s;
-  -ms-animation-delay: .6s;
-  animation-delay: .6s;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .frog .bg.bounce {
@@ -462,17 +474,17 @@ button:not(.disabled):hover {
 }
 
 .frog.yellow .bg.bounce {
-  -webkit-animation-delay: .3s;
-  -moz-animation-delay: .3s;
-  -ms-animation-delay: .3s;
-  animation-delay: .3s;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .frog.red .bg.bounce {
-  -webkit-animation-delay: .6s;
-  -moz-animation-delay: .6s;
-  -ms-animation-delay: .6s;
-  animation-delay: .6s;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .lilypad .bg,
@@ -489,27 +501,27 @@ button:not(.disabled):hover {
 }
 
 .lilypad.green .bg {
-  background-image: url("../images/lilypad-green.svg");
+  background-image: url('../images/lilypad-green.svg');
 }
 
 .lilypad.red .bg {
-  background-image: url("../images/lilypad-red.svg");
+  background-image: url('../images/lilypad-red.svg');
 }
 
 .lilypad.yellow .bg {
-  background-image: url("../images/lilypad-yellow.svg");
+  background-image: url('../images/lilypad-yellow.svg');
 }
 
 .frog.green .bg {
-  background-image: url("../images/frog-green.svg");
+  background-image: url('../images/frog-green.svg');
 }
 
 .frog.red .bg {
-  background-image: url("../images/frog-red.svg");
+  background-image: url('../images/frog-red.svg');
 }
 
 .frog.yellow .bg {
-  background-image: url("../images/frog-yellow.svg");
+  background-image: url('../images/frog-yellow.svg');
 }
 
 .wrap {
@@ -517,58 +529,58 @@ button:not(.disabled):hover {
 }
 
 .logo-nativescript {
-	background-image: url("../images/nativescript.png");
-	background-size: 100% auto;
+  background-image: url('../images/nativescript.png');
+  background-size: 100% auto;
 }
 
 .logo-angular {
-	background-image: url("../images/angular.png");
-	background-size: 100% auto;
+  background-image: url('../images/angular.png');
+  background-size: 100% auto;
 }
 
 .logo-vue {
-	background-image: url("../images/vue.png");
-	background-size: 100% auto;
+  background-image: url('../images/vue.png');
+  background-size: 100% auto;
 }
 
 .logo-webpack {
-	background-image: url("../images/webpack.png");
-	background-size: 100% auto;
+  background-image: url('../images/webpack.png');
+  background-size: 100% auto;
 }
 
 .logo-nativescripting {
-	background-image: url("../images/nativescripting.png");
-	background-size: 100% auto;
+  background-image: url('../images/nativescripting.png');
+  background-size: 100% auto;
 }
 
 .logo-redux {
-	background-image: url("../images/ngredux.png");
-	background-size: 100% auto;
+  background-image: url('../images/ngredux.png');
+  background-size: 100% auto;
 }
 
 .logo-preact {
-	background-image: url("../images/preact.png");
-	background-size: 100% auto;
+  background-image: url('../images/preact.png');
+  background-size: 100% auto;
 }
 
 .screen {
-	background-color: white;
-	padding-top: 50px;
-	overflow: hidden;
+  background-color: white;
+  padding-top: 50px;
+  overflow: hidden;
 }
 
 .screen-actionbar {
-	height: 52px;
-	width: 100%;
-	background-image: url("../images/actionbar-blue-lg.png");
-	background-size: 100% auto;
-	position: absolute;
-	top: 11.997736276174306%;
-    left: 6.206896551724138%;
-	width: 87.35632183908046%;
-	z-index: 1000;
+  height: 52px;
+  width: 100%;
+  background-image: url('../images/actionbar-blue-lg.png');
+  background-size: 100% auto;
+  position: absolute;
+  top: 11.997736276174306%;
+  left: 6.206896551724138%;
+  width: 87.35632183908046%;
+  z-index: 1000;
 }
 
 .device-wrapper {
-	max-width: 350px !important;
+  max-width: 350px !important;
 }

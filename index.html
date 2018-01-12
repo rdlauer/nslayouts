@@ -28,127 +28,134 @@
 </head>
 
 <body>
-	<section id="sidebar">
-		<div>
-			<div id="level-counter">
-				<span class="arrow left">◀</span>
-				<span id="level-indicator">
-					<span id="labelLevel" class="translate">Level</span>
-					<span class="current">1</span>
-					<span id="labelOf" class="translate">of</span>
-					<span class="total">1</span>
-					<span class="caret">▾</span>
-				</span>
-				<span class="arrow right">▶</span>
-				<div id="levelsWrapper" class="tooltip">
-					<div id="levels"></div>
-					<div id="labelReset" class="translate">Reset</div>
+	<div id="page-content">
+		<section id="sidebar">
+			<div>
+				<div id="level-counter">
+					<span class="arrow left">◀</span>
+					<span id="level-indicator">
+						<span id="labelLevel" class="translate">Level</span>
+						<span class="current">1</span>
+						<span id="labelOf" class="translate">of</span>
+						<span class="total">1</span>
+						<span class="caret">▾</span>
+					</span>
+					<span class="arrow right">▶</span>
+					<div id="levelsWrapper" class="tooltip">
+						<div id="levels"></div>
+						<div id="labelReset" class="translate">Reset</div>
+					</div>
 				</div>
+				<h1>Learn {N} Layouts</h1>
+				<p id="instructions"></p>
+				<p id="docs"></p>
 			</div>
-			<h1>Learn {N} Layouts</h1>
-			<p id="instructions"></p>
-			<p id="docs"></p>
-		</div>
-		<div id="editor">
-			<div id="css">
-				<div class="line-numbers">1
-					<br>2
-					<br>3
-					<br>4
-					<br>5
-					<br>6
-					<br>7
-					<br>8
-					<br>9
-					<br>10</div>
-				<pre id="before"></pre>
-				<textarea id="code" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
-				<pre id="after"></pre>
+			<div id="editor">
+				<div id="css">
+					<div class="line-numbers">1
+						<br>2
+						<br>3
+						<br>4
+						<br>5
+						<br>6
+						<br>7
+						<br>8
+						<br>9
+						<br>10</div>
+					<pre id="before"></pre>
+					<textarea id="code" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+					<pre id="after"></pre>
+				</div>
+				<button id="help" class="translate">Help!</button>
+				<button id="next" class="translate">Next</button>
 			</div>
-			<button id="help" class="translate">Help!</button>
-			<button id="next" class="translate">Next</button>
-		</div>
-		<!-- <div id="share">
-        <p class="img-next">
-          <a href="http://cssgridgarden.com"><img src="images/next-gridgarden.png"></a>
-          <a href="http://treehouse.7eer.net/c/371033/228915/3944?subId1=flexboxfroggy"><img src="images/next-treehouse.png"></a>
-        </p>
-        <p class="social">
-          <span id="tweet">
-            <a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://flexboxfroggy.com" data-via="playcodepip">Tweet</a>
-            <a href="https://twitter.com/playcodepip" class="twitter-follow-button" data-show-count="false">Follow @playcodepip</a>
-          </span>
-        </p>
-      </div> -->
+			<!-- <div id="share">
+			<p class="img-next">
+			  <a href="http://cssgridgarden.com"><img src="images/next-gridgarden.png"></a>
+			  <a href="http://treehouse.7eer.net/c/371033/228915/3944?subId1=flexboxfroggy"><img src="images/next-treehouse.png"></a>
+			</p>
+			<p class="social">
+			  <span id="tweet">
+				<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://flexboxfroggy.com" data-via="playcodepip">Tweet</a>
+				<a href="https://twitter.com/playcodepip" class="twitter-follow-button" data-show-count="false">Follow @playcodepip</a>
+			  </span>
+			</p>
+		  </div> -->
 
-		<div class="credits">
-			<span id="labelFooter" class="translate">Find NativeScript on</span>
-			<a href="https://github.com/NativeScript">GitHub</a> •
-			<a href="https://twitter.com/NativeScript">Twitter</a> •
-			<a href="http://tinyurl.com/nativescriptSlack">Slack</a> •
-			<a href="https://discourse.nativescript.org/">Forum</a>
-			<!-- <span id="language">
-          <span id="languageActive" class="toggle translate">English</span>
-          <span class="tooltip">
-            <a href="#en">English</a>
-            <a href="#es">Español</a>
-            <a href="#fr">Français</a>
-            <a href="#de">Deutsch</a>
-            <a href="#nl">Nederlands</a>
-            <a href="#pt-br">Português</a>
-            <a href="#it">Italiano</a>
-            <a href="#sv">Svenska</a>
-            <a href="#pl">Polski</a>
-            <a href="#cs">Česky</a>
-            <a href="#hu">Magyar</a>
-            <a href="#ro">Română</a>
-            <a href="#bg">Български</a>
-            <a href="#lt">Lietuvių</a>
-            <a href="#uk">Українська</a>
-            <a href="#ru">Русский</a>
-            <a href="#sr">Српски</a>
-            <a href="#tr">Türkçe</a>
-            <a href="#fa">فارسی</a>
-            <a href="#hi">हिंदी</a>
-            <a href="#ta">தமிழ்</a>
-            <a href="#ml">മലയാളം</a>
-            <a href="#zh-cn">简体中文</a>
-            <a href="#zh-tw">繁體中文</a>
-            <a href="#ja">日本語</a>
-            <a href="#ko">한국어</a>
-            <a href="#vi">Tiếng Việt</a>
-            <a href="#eo">Esperanto</a>
-          </span>
-        </span> -->
-		</div>
-		<div class="credits">
-			<span id="gridGarden" class="translate">Want to learn
-				<a href="https://www.nativescript.org/blog/a-quick-introduction-to-flexbox-in-nativescript" target="_blank">Flexbox for NativeScript</a>? Play</span>
-			<a href="http://flexboxfroggy.com" target="_blank">Flexbox Froggy</a>.
-		</div>
-	</section>
-	<section id="view">
-		<div id="board">
-			<div id="pond">
-				<div class="device-wrapper">
-					<div class="device" data-device="iPhone7" data-orientation="portrait" data-color="black">
-						<div class="screen-actionbar">
-						</div>
-						<div class="screen">
-							<!-- PUT CONTENTS HERE -->
-						</div>
-						<div class="button">
-							<!-- You can hook the "home button" to some JavaScript events or just remove it -->
+			<div class="credits">
+				<span id="labelFooter" class="translate">Try NativeScript in Your Browser: </span>
+				<a href="https://play.nativescript.org/">Playground</a>
+				<br />
+				<br />
+				<span id="labelFooter" class="translate">Find NativeScript on</span>
+				<a href="https://github.com/NativeScript">GitHub</a> •
+				<a href="https://twitter.com/NativeScript">Twitter</a> •
+				<a href="http://tinyurl.com/nativescriptSlack">Slack</a> •
+				<a href="https://discourse.nativescript.org/">Forum</a>
+				<!-- <span id="language">
+			  <span id="languageActive" class="toggle translate">English</span>
+			  <span class="tooltip">
+				<a href="#en">English</a>
+				<a href="#es">Español</a>
+				<a href="#fr">Français</a>
+				<a href="#de">Deutsch</a>
+				<a href="#nl">Nederlands</a>
+				<a href="#pt-br">Português</a>
+				<a href="#it">Italiano</a>
+				<a href="#sv">Svenska</a>
+				<a href="#pl">Polski</a>
+				<a href="#cs">Česky</a>
+				<a href="#hu">Magyar</a>
+				<a href="#ro">Română</a>
+				<a href="#bg">Български</a>
+				<a href="#lt">Lietuvių</a>
+				<a href="#uk">Українська</a>
+				<a href="#ru">Русский</a>
+				<a href="#sr">Српски</a>
+				<a href="#tr">Türkçe</a>
+				<a href="#fa">فارسی</a>
+				<a href="#hi">हिंदी</a>
+				<a href="#ta">தமிழ்</a>
+				<a href="#ml">മലയാളം</a>
+				<a href="#zh-cn">简体中文</a>
+				<a href="#zh-tw">繁體中文</a>
+				<a href="#ja">日本語</a>
+				<a href="#ko">한국어</a>
+				<a href="#vi">Tiếng Việt</a>
+				<a href="#eo">Esperanto</a>
+			  </span>
+			</span> -->
+			</div>
+			<div class="credits">
+				<span id="gridGarden" class="translate">Want to learn
+					<a href="https://www.nativescript.org/blog/a-quick-introduction-to-flexbox-in-nativescript" target="_blank">Flexbox for NativeScript</a>? Play</span>
+				<a href="http://flexboxfroggy.com" target="_blank">Flexbox Froggy</a>.
+			</div>
+		</section>
+		<section id="view">
+			<div id="board">
+				<div id="pond">
+					<div class="device-wrapper">
+						<div class="device" data-device="iPhone7" data-orientation="portrait" data-color="black">
+							<div class="screen-actionbar">
+							</div>
+							<div class="screen">
+								<!-- PUT CONTENTS HERE -->
+							</div>
+							<div class="button">
+								<!-- You can hook the "home button" to some JavaScript events or just remove it -->
+							</div>
 						</div>
 					</div>
 				</div>
+				<div id="background">
+				</div>
 			</div>
-			<div id="background">
-			</div>
-		</div>
-		<div id="holding"></div>
-		<div id="holding-hidden"></div>
-	</section>
+			<div id="holding"></div>
+			<div id="holding-hidden"></div>
+		</section>
+	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<!-- <script src="https://unpkg.com/parse@1.9.2/dist/parse.min.js"></script> -->
