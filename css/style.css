@@ -54,7 +54,7 @@ body {
 }
 
 #view {
-  float: right;
+  /* float: right; */
 }
 
 h1 {
@@ -409,7 +409,7 @@ button:not(.disabled):hover {
 
 #board {
   position: relative;
-  width: 30vw;
+  /* width: 30vw; */
   /* height: 50vw; */
   height: 760px;
   min-width: 300px;
@@ -446,6 +446,7 @@ button:not(.disabled):hover {
   display: inline-block;
   height: 100px;
   padding: 7px;
+  margin-left: 800px; /* hack to match size of code section */
 }
 
 .lilypad,
