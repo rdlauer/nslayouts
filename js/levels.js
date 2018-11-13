@@ -172,7 +172,7 @@ var levels = [
     name: '(9) dock layout stretchlastchild = false',
     instructions: {
       en:
-        "<p>You're really getting the hang of this aren't you? 😎 But I think it's time we moved on to the <code>&lt;DockLayout&gt;</code>.</p><p>You generally use the <code>&lt;DockLayout&gt;</code> when you want to position elements up against the sides of its parent container (often the page/view itself).</p><p>Let's start simple by focusing on <i>docking</i> our icons on the left/top/right/bottom of our screen. Pay attention to the <code>stretchLastChild</code> property, as that will play into what we do in the next lesson.</p><p>⚠️ Don't be surprised if the final element positions look odd, as you have to remember the docking containers end up looking like this: <img src='https://docs.nativescript.org/img/modules/layouts/dock-layout1.png' width='15%' align='top'></Image></p>"
+        "<p>You're really getting the hang of this aren't you? 😎 But I think it's time we moved on to the <code>&lt;DockLayout&gt;</code>.</p><p>You generally use the <code>&lt;DockLayout&gt;</code> when you want to position elements up against the sides of its parent container (often the page/view itself).</p><p>Let's start simple by focusing on <i>docking</i> our icons on the left/top/right/bottom of our screen. Pay attention to the <code>stretchLastChild</code> property, as that will play into what we do in the next lesson.</p><p>⚠️ Don't be surprised if the final element positions look odd, as you have to remember the docking containers end up looking like this: <img src='https://docs.nativescript.org/ui/img/modules/layouts/dock-layout1.png' width='15%' align='top'></Image></p>"
     },
     board: 'navw',
     result: [
