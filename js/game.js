@@ -6,7 +6,7 @@ var logos = {
 	i: 'nativescripting',
 	r: 'redux',
 	p: 'preact',
-	x: 'nativescript2',
+	x: 'nativescript2'
 };
 
 var game = {
@@ -345,19 +345,11 @@ var game = {
 			//$('<div/>').addClass('bg animated pulse infinite').appendTo(logoImage);
 
 			// a little hack to pre-load the images into the device, but only on level one
-			if (level.levelone) {
-				$('#holding').hide();
-				$('#holding-hidden').append(logoImage);
-				var leveloneArray = level.levelone;
-				var logoClass = '.logo-' + logos[c];
-				var levelone = leveloneArray[i];
-
-				$(logoClass).position({
-					at: 'left+' + levelone.left + ' top+' + levelone.top,
-					of: $('.screen')
-				});
-			} else if (level.name == 'win') {
+			if (level.name == 'win') {
 				// if this is the "winning" level, we are going to do more of the level one hacks to show a throbbing {N} logo
+				// changed this to just hiding the logo due to some strange positioning i couldn't figure out ¯\_(ツ)_/¯
+				$('#holding').hide();
+			} else if (level.levelone) {
 				$('#holding').hide();
 				$('#holding-hidden').append(logoImage);
 				var leveloneArray = level.levelone;

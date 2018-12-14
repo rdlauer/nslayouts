@@ -421,7 +421,9 @@ var levelWin = {
 	},
 	board: 'n',
 	result: [],
-	levelone: [{ top: 120, left: 155 }],
+	levelone: [
+		{ top: 120, left: 50 }
+	],
 	answer: 'x',
 	lines: 0,
 	hint: 'x',
