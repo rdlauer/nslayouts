@@ -1,0 +1,11 @@
+{
+	"xml.fileAssociations": [
+		{
+			"systemId": "c:\\inetpub\\wwwroot\\nslayouts\\schema\\tns.xsd",
+			"pattern": "**/**/*.xml"
+		}
+	],
+	"files.exclude": {
+		"schema": true
+	}
+}
