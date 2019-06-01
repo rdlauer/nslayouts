@@ -353,7 +353,7 @@ var levels = [
 		name: '(17) nested layouts - stack within stack',
 		instructions: {
 			en:
-				'<p>Excellent 🤙</p><p>Your final lessions revolve around the concept of <i>nested layouts</i>. This is where the real power 🔥 of NativeScript layouts come into play. By <i>nesting</i> layouts within each other, you can create virtually any user interface possible.</p><p>But let\'s start the easy way by simply nesting one <code>&lt;StackLayout&gt;</code> inside another <code>&lt;StackLayout&gt;</code>.'
+				'<p>Excellent 🤙</p><p>Your final lessons revolve around the concept of <i>nested layouts</i>. This is where the real power 🔥 of NativeScript layouts come into play. By <i>nesting</i> layouts within each other, you can create virtually any user interface possible.</p><p>But let\'s start the easy way by simply nesting one <code>&lt;StackLayout&gt;</code> inside another <code>&lt;StackLayout&gt;</code>.'
 		},
 		board: 'wir',
 		result: [
