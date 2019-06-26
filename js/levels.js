@@ -367,7 +367,7 @@ var levels = [
 		preselect: [21, 21],
 		before: '',
 		after:
-			'  <StackLayout>\n    <Image src="res://webpack" stretch="none"></Image>\n    <Image src="res://nativescripting" stretch="none"></Image>\n    <Image src="res://redux" stretch="none"></Image>\n  </StackLayout>\n<StackLayout>'
+			'  <StackLayout>\n    <Image src="res://webpack" stretch="none"></Image>\n    <Image src="res://nativescripting" stretch="none"></Image>\n    <Image src="res://redux" stretch="none"></Image>\n  </StackLayout>\n</StackLayout>'
 	},
 	{
 		name: '(18) nested layouts - two vertical stacks within stack',
