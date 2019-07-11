@@ -311,7 +311,7 @@ var levels = [
 		name: '(15) grid layout fixed/auto sizing',
 		instructions: {
 			en:
-				'<p>Alright - you think you have the <code>&lt;GridLayout&gt;</code> mastered? Haha! Think again! 😂</p><p>It\'s time to look into how we <i>size</i> our columns.</p><p>Recall in previous lessons we used syntax like <code>columns="auto" rows="auto"</code>? When we use <code>auto</code> we are telling our layout to <i>automatically</i> size the columns/rows based on the actual size of the element.</p><p>What if we wanted to use a <i>specific</i> width on a column though? Luckily we can handle that by simply substituting in a numeric value.</p><p>Let\'s space out our images a little and use a fixed with of <b>200</b> on our first column and <b>200</b> on our first row.</p>'
+				'<p>Alright - you think you have the <code>&lt;GridLayout&gt;</code> mastered? Haha! Think again! 😂</p><p>It\'s time to look into how we <i>size</i> our columns.</p><p>Recall in previous lessons we used syntax like <code>columns="auto" rows="auto"</code>? When we use <code>auto</code> we are telling our layout to <i>automatically</i> size the columns/rows based on the actual size of the element.</p><p>What if we wanted to use a <i>specific</i> width on a column though? Luckily we can handle that by simply substituting in a numeric value.</p><p>Let\'s space out our images a little and use a fixed width of <b>200</b> on our first column and <b>200</b> on our first row.</p>'
 		},
 		board: 'wirp',
 		result: [
